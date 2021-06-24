@@ -19,6 +19,12 @@ public class PurchaseForUpdate {
     private String staffCode;
 
     /**
+     * 采购时间
+     */
+    @NotBlank
+    private String purchaseDate;
+
+    /**
      * 备注
      */
     private String remark;

@@ -31,6 +31,12 @@ public class PurchaseDO {
     private String staffCode;
 
     /**
+     * 采购日期
+     */
+    @Column(name = "purchase_date")
+    private String purchaseDate;
+
+    /**
      * 采购数量
      */
     @Column(name = "num")
