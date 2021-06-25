@@ -139,7 +139,7 @@ public class PurchaseController {
      * @param detailCode 采购明细号
      * @param forUpdate 采购明细记录信息，接收前端编辑采购主表的采购明细记录时设置的参数
      */
-    @RequestMapping(value = "/details/{detail_code}", method = RequestMethod.POST)
+    @RequestMapping(value = "/details/{detail_code}", method = RequestMethod.PUT)
     public void updateDetail(
             @PathVariable(value = "detail_code") String detailCode,
             @RequestBody @Valid PurchaseDetailForUpdate forUpdate) {
